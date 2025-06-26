@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivek Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio Vk.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top shadow-regular" id="mainNav" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="400">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="800" href="#">Vivek Kumar </a>
+      <button class="navbar-toggler stylish-toggler" type="button" aria-label="Toggle navigation" style="position:relative;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;display:flex;align-items:center;justify-content:center;">
+        <img src="C:/Users/Dell/Downloads/right.png" alt="Menu" class="menu-icon-img menu-icon-open" style="width:28px;height:28px;filter:invert(1) brightness(2);transition:opacity 0.3s, transform 0.3s cubic-bezier(.4,2,.6,1);opacity:1;">
+        <img src="C:/Users/Dell/Downloads/close.png" alt="Close" class="menu-icon-img menu-icon-close" style="width:28px;height:28px;filter:invert(1) brightness(2);position:absolute;top:8px;left:8px;transition:opacity 0.3s, transform 0.3s cubic-bezier(.4,2,.6,1);opacity:0;pointer-events:none;">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1200"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1400"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1600"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1800"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="hero-section d-flex align-items-center" id="home">
+    <div class="container py-5">
+      <div class="row align-items-center flex-lg-row flex-column-reverse">
+        <div class="col-lg-6 text-lg-start text-center" data-aos="fade-right">
+          <h1 class="display-4 fw-bold mb-3 gradient-text-hero">Hi, I'm <span class="gradient-text">Vivek Kumar</span></h1>
+          <h2 class="mb-3" id="typed-role"></h2>
+          <p class="lead mb-4">I build <span class="highlight">modern</span>, <span class="highlight">interactive</span>, and <span class="highlight">beautiful</span> web experiences for brands and people.</p>
+          <div class="hero-socials mb-4 d-flex justify-content-lg-start justify-content-center gap-3">
+            <a href="https://www.linkedin.com/in/your-linkedin" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:your@email.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/your-instagram" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918882203035" class="social-icon" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <a href="#projects" class="btn btn-gradient btn-lg me-2">See My Work</a>
+          <a href="Vivek Kumar webdesigner.pdf" class="btn btn-outline-light btn-lg">Resume</a>
+        </div>
+        <div class="col-lg-6 text-center mb-4 mb-lg-0 position-relative" style="min-height:420px;">
+          <!-- 3D Shape Hero Scene -->
+          <div id="shape-hero-3d-container" style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:360px;height:420px;z-index:2;">
+            <canvas id="shape-hero-3d-canvas" width="360" height="420" style="width:100%;height:100%;background:transparent;"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5 bg-section" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center" data-aos="fade-up">
+          <h2 class="fw-bold mb-3 gradient-text">About Me</h2>
+          <p class="fs-5 text-secondary">
+          As a Front-End Developer, I love creating sleek and responsive web designs that really stand out. I'm well-versed in HTML, CSS, JavaScript, and the latest frameworks . My main priorities are creating an awesome user experience, ensuring high performance, and nailing down every little detail in design implementation. I transform UI/UX designs into code that works seamlessly and can grow with demand. I'm constantly exploring and embracing the newest web technologies and industry standards.          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5" id="skills">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 gradient-text" data-aos="fade-up">Skills</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card p-4 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-filetype-html skill-icon me-3"></i>
+              <span class="fw-bold fs-5">HTML5</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">98%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card p-4 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-filetype-css skill-icon me-3"></i>
+              <span class="fw-bold fs-5">CSS3</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-card p-4 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-filetype-js skill-icon me-3"></i>
+              <span class="fw-bold fs-5">JavaScript</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="glass-card p-4 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-react skill-icon me-3"></i>
+              <span class="fw-bold fs-5">WordPress</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="glass-card p-4 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-bootstrap skill-icon me-3"></i>
+              <span class="fw-bold fs-5">Bootstrap</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="glass-card p-4 mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-figma skill-icon me-3"></i>
+              <span class="fw-bold fs-5">Figma</span>
+            </div>
+            <div class="progress skill-progress">
+              <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="py-5 bg-section" id="projects">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 gradient-text" data-aos="fade-up">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card project-card h-100 shadow-lg border-0 glass-card position-relative overflow-hidden project-card-modern project-card-fancy">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Project 1">
+              <span class="project-badge">Featured</span>
+              <div class="project-glow"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title gradient-text">Modern Portfolio</h5>
+              <p class="card-text">Personal portfolio with a clean, responsive layout and subtle animations.</p>
+              <div class="project-tags mb-2">
+                <span class="badge bg-gradient-skill">HTML5</span>
+                <span class="badge bg-gradient-skill">CSS3</span>
+                <span class="badge bg-gradient-skill">JS</span>
+              </div>
+            </div>
+            <div class="project-overlay d-flex flex-column justify-content-center align-items-center">
+              <h5>View Details</h5>
+              <a href="#" class="btn btn-gradient mt-2">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card project-card h-100 shadow-lg border-0 glass-card position-relative overflow-hidden project-card-modern project-card-fancy">
+            <div class="project-img-wrapper">
+              <img src="C:\Users\Dell\Desktop\boostrap site\2158.jpg" class="card-img-top" alt="Project 2">
+              <span class="project-badge">Landing</span>
+              <div class="project-glow"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title gradient-text">Landing Page</h5>
+              <p class="card-text">Landing page for a SaaS product, featuring bold visuals and interactive sections.</p>
+              <div class="project-tags mb-2">
+                <span class="badge bg-gradient-skill">Bootstrap</span>
+                <span class="badge bg-gradient-skill">UI/UX</span>
+              </div>
+            </div>
+            <div class="project-overlay d-flex flex-column justify-content-center align-items-center">
+              <h5>View Details</h5>
+              <a href=" https://vivekkumar0099.github.io/pizzadelight/" class="btn btn-gradient mt-2">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card project-card h-100 shadow-lg border-0 glass-card position-relative overflow-hidden project-card-modern project-card-fancy">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Project 3">
+              <span class="project-badge">Blog</span>
+              <div class="project-glow"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title gradient-text">Blog Platform</h5>
+              <p class="card-text">Elegant blog platform for sharing articles and tutorials.</p>
+              <div class="project-tags mb-2">
+                <span class="badge bg-gradient-skill">Content</span>
+                <span class="badge bg-gradient-skill">SEO</span>
+              </div>
+            </div>
+            <div class="project-overlay d-flex flex-column justify-content-center align-items-center">
+              <h5>View Details</h5>
+              <a href="#" class="btn btn-gradient mt-2">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 gradient-text" data-aos="fade-up">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+          <form class="p-4 rounded-4 shadow-lg glass-card" id="contactForm">
+            <div class="mb-3">
+              <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control form-control-lg" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gradient btn-lg w-100">Send Message</button>
+            <div id="formMsg" class="mt-3 text-success fw-bold" style="display:none;">Thank you! I'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 bg-dark text-light text-center">
+    <div class="container">
+      &copy; <span id="year"></span> Vivek Kumar &mdash; Crafted with care.
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+
+    AOS.init({ duration: 900, once: true });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+    const roles = ["Frontend Developer", "Web Designer", "UI/UX Designer"];
+    let roleIndex = 0, charIndex = 0, typing = true;
+    function typeRole() {
+      const el = document.getElementById('typed-role');
+      if (!el) return;
+      if (typing) {
+        if (charIndex < roles[roleIndex].length) {
+          el.textContent += roles[roleIndex][charIndex++];
+          setTimeout(typeRole, 80);
+        } else {
+          typing = false;
+          setTimeout(typeRole, 1200);
+        }
+      } else {
+        if (charIndex > 0) {
+          el.textContent = roles[roleIndex].substring(0, --charIndex);
+          setTimeout(typeRole, 40);
+        } else {
+          typing = true;
+          roleIndex = (roleIndex + 1) % roles.length;
+          setTimeout(typeRole, 400);
+        }
+      }
+    }
+    typeRole();
+
+  
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // WhatsApp redirect
+      const phone = '918882203035'; // India country code + your number
+      const msg = encodeURIComponent('Hi Vivek, I am contacting you from your portfolio website!');
+      const waUrl = `https://wa.me/${phone}?text=${msg}`;
+      window.open(waUrl, '_blank');
+    });
+
+ 
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+         
+          const navMenu = document.getElementById('navMenu');
+          if (window.innerWidth < 992 && navMenu.classList.contains('show')) {
+            new bootstrap.Collapse(navMenu).toggle();
+          }
+        }
+      });
+    });
+
+
+    window.addEventListener('scroll', () => {
+      const sections = ['home','about','skills','projects','contact'];
+      let scrollPos = window.scrollY + 120;
+      sections.forEach(id => {
+        const sec = document.getElementById(id);
+        const link = document.querySelector('.nav-link[href="#'+id+'"]');
+        if (sec && link) {
+          if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+          }
+        }
+      });
+    });
+
+
+    function animateSkillBars() {
+      document.querySelectorAll('.skill-progress .progress-bar').forEach(bar => {
+        const val = bar.getAttribute('aria-valuenow');
+        bar.style.width = '0';
+        setTimeout(() => {
+          bar.style.transition = 'width 1.2s cubic-bezier(.4,2,.6,1)';
+          bar.style.width = val + '%';
+        }, 400);
+      });
+    }
+    let skillsAnimated = false;
+    window.addEventListener('scroll', () => {
+      const skills = document.getElementById('skills');
+      if (!skillsAnimated && skills && window.scrollY + window.innerHeight > skills.offsetTop + 100) {
+        animateSkillBars();
+        skillsAnimated = true;
+      }
+    });
+
+    if (window.scrollY + window.innerHeight > (document.getElementById('skills')?.offsetTop || 99999)) {
+      animateSkillBars();
+      skillsAnimated = true;
+    }
+
+
+    // --- Modern Toggle for Menu Icon with Animation ---
+    const toggler = document.querySelector('.stylish-toggler');
+    const menuIconOpen = document.querySelector('.menu-icon-open');
+    const menuIconClose = document.querySelector('.menu-icon-close');
+    const navMenu = document.getElementById('navMenu');
+    let menuOpen = false;
+    toggler.addEventListener('click', function() {
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        // Open menu: show close icon, hide open icon, animate
+        menuIconOpen.style.opacity = '0';
+        menuIconOpen.style.pointerEvents = 'none';
+        menuIconOpen.style.transform = 'rotate(90deg) scale(0.8)';
+        menuIconClose.style.opacity = '1';
+        menuIconClose.style.pointerEvents = 'auto';
+        menuIconClose.style.transform = 'rotate(0deg) scale(1)';
+        navMenu.classList.add('show');
+        // Canvas animation on menu open
+        if (window.cube) {
+          let spin = 0;
+          const origColor = window.cube.material.color.getHex();
+          const pulseColor = 0xa5f3fc;
+          function pulseAnim() {
+            if (spin < 18) {
+              window.cube.rotation.y += 0.25;
+              window.cube.material.color.setHex(pulseColor);
+              spin++;
+              requestAnimationFrame(pulseAnim);
+            } else {
+              window.cube.material.color.setHex(origColor);
+            }
+          }
+          pulseAnim();
+        }
+      } else {
+        // Close menu: show open icon, hide close icon, animate
+        menuIconOpen.style.opacity = '1';
+        menuIconOpen.style.pointerEvents = 'auto';
+        menuIconOpen.style.transform = 'rotate(0deg) scale(1)';
+        menuIconClose.style.opacity = '0';
+        menuIconClose.style.pointerEvents = 'none';
+        menuIconClose.style.transform = 'rotate(-90deg) scale(0.8)';
+        navMenu.classList.remove('show');
+      }
+    });
+    // Close menu when a nav link is clicked (for mobile UX)
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function() {
+        if (window.innerWidth < 992 && menuOpen) {
+          toggler.click();
+        }
+      });
+    });
+
+
+    // 3D Shape Hero Section: Scientific Cube
+    if (document.getElementById('shape-hero-3d-canvas') && window.THREE) {
+      const canvas = document.getElementById('shape-hero-3d-canvas');
+      const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+      renderer.setClearColor(0x000000, 0);
+      renderer.setSize(360, 420);
+      const scene = new THREE.Scene();
+      // Camera
+      const camera = new THREE.PerspectiveCamera(50, 360/420, 0.1, 100);
+      camera.position.set(0, 0.6, 4.5);
+      // Lighting
+      const ambient = new THREE.AmbientLight(0xffffff, 0.18);
+      scene.add(ambient);
+      const spot = new THREE.SpotLight(0x38bdf8, 2.5, 10, Math.PI/3, 0.7, 1);
+      spot.position.set(0, 4, 2);
+      scene.add(spot);
+      // Scientific Cube: wireframe, glowing edges, and floating spheres at vertices
+      const cubeGeo = new THREE.BoxGeometry(1.5, 1.5, 1.5);
+      // Wireframe
+      const wireMat = new THREE.MeshBasicMaterial({ color: 0x38bdf8, wireframe: true, opacity: 0.7, transparent: true });
+      const wireCube = new THREE.Mesh(cubeGeo, wireMat);
+      wireCube.position.y = 0.5;
+      scene.add(wireCube);
+      // Glowing Edges
+      const edgeGeo = new THREE.EdgesGeometry(cubeGeo);
+      const edgeMat = new THREE.LineBasicMaterial({ color: 0xa5f3fc, linewidth: 2, transparent: true, opacity: 0.9 });
+      const edges = new THREE.LineSegments(edgeGeo, edgeMat);
+      edges.position.y = 0.5;
+      scene.add(edges);
+      // Floating spheres at vertices
+      const vertexMat = new THREE.MeshPhongMaterial({ color: 0xffffff, emissive: 0x38bdf8, emissiveIntensity: 0.7 });
+      const vertexGeo = new THREE.SphereGeometry(0.09, 16, 16);
+      const vertices = [
+        [-0.75, -0.75, -0.75], [0.75, -0.75, -0.75], [0.75, 0.75, -0.75], [-0.75, 0.75, -0.75],
+        [-0.75, -0.75, 0.75], [0.75, -0.75, 0.75], [0.75, 0.75, 0.75], [-0.75, 0.75, 0.75]
+      ];
+      const spheres = [];
+      vertices.forEach(v => {
+        const s = new THREE.Mesh(vertexGeo, vertexMat.clone());
+        s.position.set(v[0], v[1]+0.5, v[2]);
+        scene.add(s);
+        spheres.push(s);
+      });
+      // Animate: rotate, pulse edges, float spheres
+      let t = 0;
+      function animate() {
+        t += 0.018;
+        wireCube.rotation.x += 0.012;
+        wireCube.rotation.y += 0.018;
+        edges.rotation.x += 0.012;
+        edges.rotation.y += 0.018;
+        // Pulse edge color
+        const pulse = 0.7 + 0.3 * Math.sin(t * 2);
+        edgeMat.color.setHSL(0.55, 1, pulse);
+        // Float spheres
+        spheres.forEach((s, i) => {
+          s.position.y = vertices[i][1] + 0.5 + Math.sin(t * 2 + i) * 0.08;
+        });
+        renderer.render(scene, camera);
+        requestAnimationFrame(animate);
+      }
+      animate();
+      window.cube = wireCube; // For menu animation
+    }
+  </script>
+</body>
+</html>
