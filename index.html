@@ -21,9 +21,16 @@
      data-aos-easing="linear"
      data-aos-duration="800" href="#">Vivek Kumar </a>
       <button class="navbar-toggler stylish-toggler" type="button" aria-label="Toggle navigation" style="position:relative;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;display:flex;align-items:center;justify-content:center;">
-        <img src="right.png" alt="Menu" class="menu-icon-img menu-icon-open" style="width:28px;height:28px;filter:invert(1) brightness(2);transition:opacity 0.3s, transform 0.3s cubic-bezier(.4,2,.6,1);opacity:1;">
-        <img src="close.png" alt="Close" class="menu-icon-img menu-icon-close" style="width:28px;height:28px;filter:invert(1) brightness(2);position:absolute;top:8px;left:8px;transition:opacity 0.3s, transform 0.3s cubic-bezier(.4,2,.6,1);opacity:0;pointer-events:none;">
+        <img src="C:/Users/Dell/Downloads/right.png" alt="Menu" class="menu-icon-img menu-icon-open" style="width:28px;height:28px;filter:invert(1) brightness(2);transition:opacity 0.3s, transform 0.3s cubic-bezier(.4,2,.6,1);opacity:1;">
+        <img src="C:/Users/Dell/Downloads/close.png" alt="Close" class="menu-icon-img menu-icon-close" style="width:28px;height:28px;filter:invert(1) brightness(2);position:absolute;top:8px;left:8px;transition:opacity 0.3s, transform 0.3s cubic-bezier(.4,2,.6,1);opacity:0;pointer-events:none;">
       </button>
+      <style>
+        @media (min-width: 992px) {
+          .navbar-toggler.stylish-toggler {
+            display: none !important;
+          }
+        }
+      </style>
       <div class="collapse navbar-collapse justify-content-end" id="navMenu">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item" data-aos="fade-down"
@@ -55,10 +62,18 @@
           <h2 class="mb-3" id="typed-role"></h2>
           <p class="lead mb-4">I build <span class="highlight">modern</span>, <span class="highlight">interactive</span>, and <span class="highlight">beautiful</span> web experiences for brands and people.</p>
           <div class="hero-socials mb-4 d-flex justify-content-lg-start justify-content-center gap-3">
-            <a href="https://www.linkedin.com/in/your-linkedin" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:your@email.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.instagram.com/your-instagram" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/918882203035" class="social-icon" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/918882203035" class="social-icon themed-icon" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/zenvicky" class="social-icon themed-icon" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vivek-kumar-359617" class="social-icon themed-icon" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:vivek.359617@gmail.com" class="social-icon themed-icon" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
           <a href="#projects" class="btn btn-gradient btn-lg me-2">See My Work</a>
           <a href="Vivek Kumar webdesigner.pdf" class="btn btn-outline-light btn-lg">Resume</a>
@@ -78,13 +93,39 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center" data-aos="fade-up">
-          <h2 class="fw-bold mb-3 gradient-text">About Me</h2>
-          <p class="fs-5 text-secondary">
-          As a Front-End Developer, I love creating sleek and responsive web designs that really stand out. I'm well-versed in HTML, CSS, JavaScript, and the latest frameworks . My main priorities are creating an awesome user experience, ensuring high performance, and nailing down every little detail in design implementation. I transform UI/UX designs into code that works seamlessly and can grow with demand. I'm constantly exploring and embracing the newest web technologies and industry standards.          </p>
+          <h2 class="fw-bold mb-3 gradient-text about-title">About Me</h2>
+          <p class="fs-5 text-secondary about-desc">
+          As a Front-End Developer, I love creating sleek and responsive web designs that really stand out. I'm well-versed in HTML, CSS, JavaScript, and the latest frameworks. My main priorities are creating an awesome user experience, ensuring high performance, and nailing down every little detail in design implementation. I transform UI/UX designs into code that works seamlessly and can grow with demand. I'm constantly exploring and embracing the newest web technologies and industry standards.
+          </p>
         </div>
       </div>
     </div>
   </section>
+  <style>
+    @media (max-width: 600px) {
+      .about-title {
+        font-size: 1.6rem !important;
+      }
+      .about-desc {
+        font-size: 1.02rem !important;
+        line-height: 1.6;
+        padding: 0 0.2em;
+      }
+    }
+    @media (max-width: 400px) {
+      .about-title {
+        font-size: 1.2rem !important;
+      }
+      .about-desc {
+        font-size: 0.98rem !important;
+      }
+    }
+    @media (min-width: 992px) {
+      .navbar-toggler.stylish-toggler {
+        display: none !important;
+      }
+    }
+  </style>
 
 
   <section class="py-5" id="skills">
@@ -92,66 +133,54 @@
       <h2 class="fw-bold text-center mb-4 gradient-text" data-aos="fade-up">Skills</h2>
       <div class="row g-4 justify-content-center">
         <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="glass-card p-4 mb-3">
-            <div class="d-flex align-items-center mb-2">
-              <i class="bi bi-filetype-html skill-icon me-3"></i>
-              <span class="fw-bold fs-5">HTML5</span>
-            </div>
+          <div class="glass-card p-4 mb-3 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" style="width:54px;height:54px;margin-bottom:0.7em;">
+            <div class="fw-bold fs-5 mb-2">HTML5</div>
             <div class="progress skill-progress">
               <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">98%</div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="glass-card p-4 mb-3">
-            <div class="d-flex align-items-center mb-2">
-              <i class="bi bi-filetype-css skill-icon me-3"></i>
-              <span class="fw-bold fs-5">CSS3</span>
-            </div>
+          <div class="glass-card p-4 mb-3 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" style="width:54px;height:54px;margin-bottom:0.7em;">
+            <div class="fw-bold fs-5 mb-2">CSS3</div>
             <div class="progress skill-progress">
               <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="glass-card p-4 mb-3">
-            <div class="d-flex align-items-center mb-2">
-              <i class="bi bi-filetype-js skill-icon me-3"></i>
-              <span class="fw-bold fs-5">JavaScript</span>
-            </div>
+          <div class="glass-card p-4 mb-3 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" style="width:54px;height:54px;margin-bottom:0.7em;">
+            <div class="fw-bold fs-5 mb-2">JavaScript</div>
             <div class="progress skill-progress">
               <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="glass-card p-4 mb-3">
-            <div class="d-flex align-items-center mb-2">
-              <i class="bi bi-react skill-icon me-3"></i>
-              <span class="fw-bold fs-5">WordPress</span>
-            </div>
+          <div class="glass-card p-4 mb-3 text-center">
+            <i class="fa-brands fa-wordpress-simple" style="font-size:54px;color:#21759b;margin-bottom:0.7em;"></i>
+            <div class="fw-bold fs-5 mb-2">WordPress</div>
             <div class="progress skill-progress">
               <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="glass-card p-4 mb-3">
-            <div class="d-flex align-items-center mb-2">
-              <i class="bi bi-bootstrap skill-icon me-3"></i>
-              <span class="fw-bold fs-5">Bootstrap</span>
-            </div>
+          <div class="glass-card p-4 mb-3 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap" style="width:54px;height:54px;margin-bottom:0.7em;">
+            <div class="fw-bold fs-5 mb-2">Bootstrap</div>
             <div class="progress skill-progress">
               <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-          <div class="glass-card p-4 mb-3">
-            <div class="d-flex align-items-center mb-2">
-              <i class="bi bi-figma skill-icon me-3"></i>
-              <span class="fw-bold fs-5">Figma</span>
-            </div>
+          <div class="glass-card p-4 mb-3 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma" style="width:54px;height:54px;margin-bottom:0.7em;">
+            <div class="fw-bold fs-5 mb-2">Figma</div>
             <div class="progress skill-progress">
               <div class="progress-bar bg-gradient-skill" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
             </div>
@@ -162,28 +191,60 @@
   </section>
 
   
- <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-<div class="card project-card h-100 shadow-lg border-0 glass-card position-relative overflow-hidden project-card-modern project-card-fancy">
-<div class="project-img-wrapper">
-<img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Modern Portfolio Screenshot">
-<span class="project-badge">Featured</span>
-<div class="project-glow"></div>
-</div>
-<div class="card-body">
-<h5 class="card-title gradient-text">Modern Portfolio</h5>
-<p class="card-text">Personal portfolio with a clean, responsive layout and subtle animations.</p>
-<div class="project-tags mb-2">
-<span class="badge bg-gradient-skill">HTML5</span>
-<span class="badge bg-gradient-skill">CSS3</span>
-<span class="badge bg-gradient-skill">JavaScript</span>
-</div>
-</div>
-<div class="project-overlay d-flex flex-column justify-content-center align-items-center">
-<h5>View Details</h5>
-<a href="#" class="btn btn-gradient mt-2" target="_blank" rel="noopener">Live Demo</a>
-</div>
-</div>
-</div>
+  <section class="py-5 bg-section" id="projects">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 gradient-text-modern" data-aos="fade-up">Projects</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card project-card-modern h-100 border-0 shadow-lg glass-card-modern position-relative">
+            <div class="project-img-wrapper-modern position-relative">
+              <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Project 1">
+              
+              <div class="project-overlay d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-2 small">A modern, responsive personal portfolio website with smooth animations, glassmorphism, and a 3D hero section. Designed for maximum impact and professionalism.</p>
+                
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title gradient-text-modern mb-2">Modern Portfolio</h5>
+              <div class="project-desc mb-2 text-secondary">Showcases personal branding, skills, and projects with a clean, interactive UI and advanced CSS/JS effects.</div>
+              <a href="https://vivekzx02.github.io/landing-page/#hero" class="btn btn-gradient view-btn mt-2" target="_blank">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card project-card-modern h-100 border-0 shadow-lg glass-card-modern position-relative">
+            <div class="project-img-wrapper-modern position-relative">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Project 2">
+              <div class="project-overlay d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-2 small">A bold SaaS landing page with interactive sections, professional layout, and conversion-focused design. Built for startups and tech brands.</p>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title gradient-text-modern mb-2">Landing Page</h5>
+              <div class="project-desc mb-2 text-secondary">Features dynamic content, call-to-action areas, and a visually striking hero section for maximum engagement.</div>
+              <a href="https://vivekzx02.github.io/pizzadelight/" class="btn btn-gradient view-btn mt-2" target="_blank">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card project-card-modern h-100 border-0 shadow-lg glass-card-modern position-relative">
+            <div class="project-img-wrapper-modern position-relative">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Project 3">
+              <div class="project-overlay d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-2 small">Elegant blog platform for sharing articles and tutorials, with a focus on readability and clean design.</p>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title gradient-text-modern mb-2">Blog Platform</h5>
+              <div class="project-desc mb-2 text-secondary">Responsive, easy to navigate, and optimized for content creators and readers alike.</div>
+              <a href="#" class="btn btn-gradient view-btn mt-2" target="_blank">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
 
   <section class="py-5" id="contact">
     <div class="container">
@@ -208,9 +269,11 @@
     </div>
   </section>
 
-  <footer class="py-4 bg-dark text-light text-center">
+  <footer class="py-4 bg-footer text-light text-center" style="background: linear-gradient(90deg, #232526 0%, #414345 100%); border-top: 2px solid #38bdf8; box-shadow: 0 -2px 16px 0 rgba(56,189,248,0.10);">
     <div class="container">
-      &copy; <span id="year"></span> Vivek Kumar &mdash; Crafted with care.
+      <span style="font-weight:600;letter-spacing:0.5px;color:#a5f3fc;">&copy; <span id="year"></span> Vivek Kumar</span>
+      <span class="mx-2" style="color:#6366f1;">&mdash;</span>
+      <span style="color:#eee;">Crafted with <i class="fa fa-heart" style="color:#e11d48;"></i> &amp; code</span>
     </div>
   </footer>
 
@@ -439,5 +502,42 @@
       window.cube = wireCube; // For menu animation
     }
   </script>
+  <style>
+    .bg-footer {
+      background: linear-gradient(90deg, #232526 0%, #414345 100%) !important;
+      border-top: 2px solid #38bdf8;
+      box-shadow: 0 -2px 16px 0 rgba(56,189,248,0.10);
+    }
+    .bg-footer span, .bg-footer i {
+      vertical-align: middle;
+    }
+    .bg-footer .fa-heart {
+      animation: pulse 1.2s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.18); }
+    }
+    .themed-icon {
+      background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+      color: #fff !important;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      box-shadow: 0 2px 8px 0 rgba(56,189,248,0.10);
+      transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1);
+      border: 2px solid #232526;
+    }
+    .themed-icon:hover {
+      transform: scale(1.13) rotate(-6deg);
+      box-shadow: 0 4px 16px 0 rgba(99,102,241,0.18);
+      background: linear-gradient(135deg, #6366f1 0%, #38bdf8 100%);
+      color: #fff !important;
+    }
+  </style>
 </body>
 </html>
